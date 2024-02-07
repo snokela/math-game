@@ -18,7 +18,7 @@ const randomizeNumbers = () => {
 }
 
 addEventListener("DOMContentLoaded", () => {
-    randomizeNumbers ()
+    randomizeNumbers()
 });
 
 document.querySelector('button').addEventListener('click', () => {
@@ -28,17 +28,13 @@ document.querySelector('button').addEventListener('click', () => {
     if (answer === correctAnswer) {
         alert('Correct!')
         correct += 1
-        document.querySelector('#cor').innerHTML = correct
-
-
+        document.querySelector('#correct').innerHTML = correct
     } else {
         alert('Incorrect!')
         incorrect += 1
-        document.querySelector('#incor').innerHTML = incorrect
-     
+        document.querySelector('#incorrect').innerHTML = incorrect
     }
 
     randomizeNumbers()
     document.querySelector('input').value= ''
-
 })
